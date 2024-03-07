@@ -8,7 +8,6 @@ import android.os.PowerManager
 import android.util.Log
 import android.widget.Button
 import androidx.core.app.ActivityCompat
-import kotlinx.android.synthetic.main.activity_main.btnRequestPermissions
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
