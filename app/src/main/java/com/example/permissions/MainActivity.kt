@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PowerManager
 import android.util.Log
+import android.widget.Button
 import androidx.core.app.ActivityCompat
 import kotlinx.android.synthetic.main.activity_main.btnRequestPermissions
 
@@ -13,7 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btnRequestPermissions.setOnClickListener {
+        val btnRequestPermission = findViewById<Button>(R.id.btnRequestPermissions)
+        btnRequestPermission.setOnClickListener {
             requestPermissions()
         }
     }
